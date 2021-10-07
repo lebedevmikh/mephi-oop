@@ -14,6 +14,7 @@ namespace cass
 	public:
 		double x;
 		double y;
+		Point(): x(0), y(0) {};
 		Point(double x0 = 0, double y0 = 0): x(x0), y(y0) {};
 	};
 
@@ -30,8 +31,8 @@ namespace cass
 
 
 	public:
+		Cassini();
 		Cassini(Point first, Point second, double arg);
-
 		void set_F1(Point dot);
 		void set_F2(Point dot);
 		void set_a(int dist);
