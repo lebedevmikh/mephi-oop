@@ -14,7 +14,6 @@ namespace cass
 	public:
 		double x;
 		double y;
-		Point(): x(0), y(0) {};
 		Point(double x0 = 0, double y0 = 0): x(x0), y(y0) {};
 	};
 
