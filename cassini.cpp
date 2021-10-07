@@ -3,6 +3,7 @@
 
 namespace cass
 {
+	Cassini::Cassini(): F1(Point()), F2(Point()), c(0), a(0), center(Point()) {};
 	Cassini::Cassini(Point first, Point second, double arg): F1(first), F2(second), c((std::sqrt(pow(second.x-first.x,2)+pow(second.y-first.y,2)))/2), a(arg), center(Point((first.x+second.x)/2,(first.y+second.y)/2)) {};
 
 	void Cassini::set_F1(Point dot)
