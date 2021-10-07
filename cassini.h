@@ -44,8 +44,8 @@ namespace cass
 		double get_a() const{ return a; }
 
 
-		double coordinate(double fi);
-		double curvature(double ro);
+		const double coordinate(double fi);
+		const double curvature(double ro);
 
 		const char* type();
 		const char* cartesian(char* res);
