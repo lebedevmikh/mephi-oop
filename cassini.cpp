@@ -36,7 +36,7 @@ namespace cass
 	}
 
 	
-	double Cassini::coordinate(double fi)
+	const double Cassini::coordinate(double fi)
 	{
 		double t, r;
 		double D = 4*std::pow(c,2)*std::pow(std::cos((2*fi)),2) - 4*(std::pow(a,4)-std::pow(c,4));
@@ -51,7 +51,7 @@ namespace cass
 	}
 
 
-	double Cassini::curvature(double ro)
+	const double Cassini::curvature(double ro)
 	{
 		if (ro < 0 ) throw std::runtime_error("invalid argument");
 		double R;
